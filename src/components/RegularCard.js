@@ -1,7 +1,6 @@
 import React from "react";
 
 function RegularCard(props) {
-  console.log(props.questionData);
   const question = props.questionData;
   return (
     <div>

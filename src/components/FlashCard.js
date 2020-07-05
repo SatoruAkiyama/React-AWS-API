@@ -3,11 +3,7 @@ import MultiCard from "./MultiCard";
 import RegularCard from "./RegularCard";
 import RandomWheightCard from "./RandomWeight ";
 import axios from "axios";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
-
-library.add(faSpinner);
+import FontAwesome from "./FontAwesome";
 
 class FlashCard extends Component {
   constructor() {
@@ -38,7 +34,6 @@ class FlashCard extends Component {
       path = this.apiHostRoot + "/multi";
     }
     axios.get(path).then((response) => {
-      // console.log(response.data);
       this.setState({
         questionData: response.data,
       });
@@ -60,7 +55,7 @@ class FlashCard extends Component {
       this.newCard();
       return (
         <div className="spinner-wrapper">
-          <FontAwesomeIcon icon="spinner" size="6x" spin />
+          <FontAwesome icon="spinner" size="4x" spin />
         </div>
       );
     }

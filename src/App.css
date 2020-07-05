@@ -1,11 +1,12 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background-color: rgb(255, 255, 255);
+  background-color: #eae8e8;
   padding: 3%;
 }
 h1 {
   color: rgb(0, 225, 255);
+  padding-bottom: 20px;
 }
 
 .card-holder {
@@ -19,9 +20,15 @@ h1 {
   border-radius: 0.3125rem;
   cursor: pointer;
   max-width: 200px;
-  background-color: #eae8e8;
+  background-color: #fff;
   margin: 10px auto;
+  transition: all 0.3s;
 }
+
+.nav-card:hover {
+  box-shadow: none;
+}
+
 .card {
   height: 200px;
   box-shadow: 0 0.125rem 1.25rem 0 rgba(0, 0, 0, 0.24);
@@ -29,7 +36,7 @@ h1 {
   transform-style: preserve-3d;
   transition: 1s all;
   cursor: pointer;
-  background-color: #eae8e8;
+  background-color: #fff;
 }
 
 .nav-card span {

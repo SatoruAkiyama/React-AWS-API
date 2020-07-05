@@ -6,7 +6,7 @@ function MultiCard(props) {
   const options = question.options.map((option, i) => {
     return (
       <li key={i}>
-        {choices[i]}, {option}
+        {choices[i]}. {option}
       </li>
     );
   });
